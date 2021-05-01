@@ -4,7 +4,7 @@ import './App.css';
 import UncontrolledAccordion from "./components/UncontrolledAccordion/UncontrolledAccordion";
 import {UncontrolledRating} from "./components/UncontrolledRating/UncontrolledRating";
  import {RatingValueType} from "./components/Rating/Rating";
-import SelfControlledAccordion from "./components/SelfControlledAccordion/SelfControlledAccordion";
+import {SelfControlledAccordion} from "./components/SelfControlledAccordion/SelfControlledAccordion";
 import OnOff from "./components/OnOff/SelfControlledOnOff";
 import {UncontrolledOnOff} from "./components/OnOff/OnOff";
 
