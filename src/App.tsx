@@ -17,7 +17,7 @@ function App() {
     return (
         <div className = 'App'>
             {/*<PageTitle title={"This is APP component"}/>*/}
-            <UncontrolledRating/>
+            {/*<UncontrolledRating/>*/}
             {/*<Rating value ={ratingValue} onClick ={setRatingValue}/>*/}
             {/*<Rating value ={2}/>*/}
             {/*<Rating value ={3}/>*/}
