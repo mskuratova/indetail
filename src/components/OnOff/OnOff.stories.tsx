@@ -7,8 +7,8 @@ export default {
     components: OnOff
 }
 
-export const OnMode = () => <OnOff on={true} defaultOn = {true} onChange={action("on or off clicked")}/>
-export const OffMode = () => <OnOff on={false} defaultOn = {false} onChange={action("on or off clicked")}/>
+export const OnMode = () => <OnOff on={true}  onChange={action("on or off clicked")}/>
+export const OffMode = () => <OnOff on={false}  onChange={action("on or off clicked")}/>
 
 export const ModeChanging = () => {
     const [value, setValue] = useState<boolean>(true);
