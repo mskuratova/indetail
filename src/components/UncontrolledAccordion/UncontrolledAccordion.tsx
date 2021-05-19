@@ -1,4 +1,6 @@
-import React, {useState} from "react";
+import React, {useReducer, useState} from "react";
+import {action} from "@storybook/addon-actions";
+import {reducer} from "./reducer";
 
 type AccordionTitleType = {
     title :string
@@ -7,12 +9,14 @@ type AccordionTitleType = {
 
 
 
+
 function UncontrolledAccordion(props:AccordionTitleType) {
 
-    let [collapsed, setCollapsed] = useState(false);
+    let [collapsed, dispatch] = useReducer(reducer,{collapsed: false});
 
     return <div>
-        <AccordionTitle title={props.title} onClick ={() => {setCollapsed(!collapsed) } } />
+        {/*<AccordionTitle title={props.title} onClick ={() => {setCollapsed(!collapsed) } } />*/}
+        <AccordionTitle title={props.title} onClick ={() => {dispatch({type:"TOGGLE-COLLAPSED"}) } } />
         {!collapsed && <AccordionBody/>}
     </div>
 
