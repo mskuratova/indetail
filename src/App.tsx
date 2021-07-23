@@ -24,7 +24,7 @@ function App() {
             {/*<Rating value ={4}/>*/}
             {/*<Rating value ={5}/>*/}
             {/*<UncontrolledAccordion title={"Menu"} />*/}
-            <SelfControlledAccordion title={"Menu"} collapsed={accordionCollapsed} onChange = {() => {setAccordionCollapsed(!accordionCollapsed)}}/>
+            {/*<SelfControlledAccordion title={"Menu"} collapsed={accordionCollapsed} onChange = {() => {setAccordionCollapsed(!accordionCollapsed)}}/>*/}
             {/*<UncontrolledAccordion title={"Users"} />*/}
             {/*<OnOff  />*/}
             <OnOff  on ={switchOn} onChange = {setSwitchOn}/>
